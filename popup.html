@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HmhcoAI Popup</title>
+    <style>
+      body {
+        width: 110px;
+        text-align: center;
+      }
+      button {
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 17px;
+        padding: 20px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      button:hover span {
+        padding-right: 25px;
+      }
+
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>
+      Made by <br />Anthony Kercher
+      <hr />
+    </h4>
+    <button
+      id="startButton"
+      style="
+        background-color: cornflowerblue;
+        padding: 10px;
+        margin: 2px;
+        display: inline-block;
+      "
+    >
+      <span>Capture</span>
+    </button>
+    <button
+      id="stopButton"
+      style="
+        background-color: coral;
+        padding: 10px;
+        margin: 2px;
+        display: inline-block;
+      "
+    >
+      <span>Done</span>
+    </button>
+    <button
+      id="clearButton"
+      style="
+        background-color: maroon;
+        padding: 10px;
+        margin: 2px;
+        display: inline-block;
+      "
+    >
+      <span>Clear</span>
+    </button>
+    <br />
+    <br />
+    <span>Need some help?</span>
+    <button
+      id="helpButton"
+      style="
+        background-color: slategray;
+        padding: 10px;
+        margin: 2px;
+        display: inline-block;
+        font-size: 11px;
+        padding: 2px;
+        width: 100px;
+      "
+    >
+      <span>Click Here</span>
+    </button>
+    <script src="popup.js"></script>
+  </body>
+</html>
