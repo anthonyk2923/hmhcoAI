@@ -6,10 +6,10 @@
 Do whatever, not your notes!
 
 Automatically takes notes from hmhco.com textbooks
---
+
 hmhco.com note taker
----
-Tutorial:
+
+### Tutorial:
 Before starting click 'Clear'. 
 
 Then go through every page and click 'capture'. 
